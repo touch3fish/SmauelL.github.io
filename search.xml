@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[我的第一篇博客]]></title>
-    <url>%2F2019%2F08%2F21%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%2F</url>
-    <content type="text"><![CDATA[123&lt;?phpecho &quot;hello wordl!&quot; 测试成功]]></content>
+    <title><![CDATA[CSS实现抖音风格文字]]></title>
+    <url>%2F%2Fblog%2FCSS%E5%AE%9E%E7%8E%B0%E6%8A%96%E9%9F%B3%E9%A3%8E%E6%A0%BC%E6%96%87%E5%AD%97.html</url>
+    <content type="text"></content>
       <tags>
-        <tag>测试</tag>
+        <tag>CSS</tag>
       </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[我的第一篇博客]]></title>
+    <url>%2F%2Fblog%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2.html</url>
+    <content type="text"><![CDATA[123&lt;?phpecho &quot;hello wordl!&quot; 测试成功]]></content>
   </entry>
 </search>
