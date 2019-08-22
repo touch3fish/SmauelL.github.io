@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[你好hexo]]></title>
+    <url>%2F%2Fblog%2F%E4%BD%A0%E5%A5%BDhexo.html</url>
+    <content type="text"><![CDATA[HEXO 安装git安装1git node.js安装1hexo g &amp;&amp; hexo s]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[CSS实现抖音风格文字]]></title>
     <url>%2F%2Fblog%2FCSS%E5%AE%9E%E7%8E%B0%E6%8A%96%E9%9F%B3%E9%A3%8E%E6%A0%BC%E6%96%87%E5%AD%97.html</url>
-    <content type="text"><![CDATA[#1级标题测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据 ##2级标题测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据 #测试几点开始垃圾堆里卡睡觉了]]></content>
+    <content type="text"><![CDATA[1级标题测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据 2级标题测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据 测试几点开始垃圾堆里卡睡觉了]]></content>
       <tags>
         <tag>CSS</tag>
       </tags>
