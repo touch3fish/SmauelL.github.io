@@ -12,12 +12,20 @@ NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js', () => {
     appId: 'xM4mgRfj1W9xpn9lfoklgmOz-gzGzoHsz',
     appKey: 'gmkKu5PM9RVn9azCN4dvVuPw',
     placeholder: '既然来了,那就留下点什么吧...',
-    avatar: 'mp',
+    avatar: 'mm',
     meta: guest,
     pageSize: '10' || 10,
     visitor: true,
     lang: '' || 'zh-cn',
     path: location.pathname
   });
-}, window.Valine);
+    //移除power by
+  var infoEle = document.querySelector('#comments');
+  console.log(infoEle.childNodes);
+  if(infoEle&&infoEle.childNodes&&infoEle.childNodes.length > 0){
+    infoEle.childNodes.forEach(function(item){
+      item.parentNode.removeChild(item);
+    });
+  }
+},window.Valine);
 </script></body></html>
