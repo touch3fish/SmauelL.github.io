@@ -4,11 +4,36 @@
   
     
     <entry>
-      <title>解决mac command not found</title>
-      <link href="//blog/%E4%BD%A0%E5%A5%BDhexo.html"/>
-      <url>//blog/%E4%BD%A0%E5%A5%BDhexo.html</url>
+      <title>composer报错zlib_decode()</title>
+      <link href="//blog/composer%E6%8A%A5%E9%94%99zlib_decode().html"/>
+      <url>//blog/composer%E6%8A%A5%E9%94%99zlib_decode().html</url>
       
-        <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>最近在配置mac的环境变量后,系统的所有命令都失效了提示mac command not found 在此记录解决方法</p></blockquote><h2 id="1-先让命令暂时可用"><a href="#1-先让命令暂时可用" class="headerlink" title="1.先让命令暂时可用"></a>1.先让命令暂时可用</h2><p>命令如下</p><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">export PATH=<span class="regexp">/usr/bin</span><span class="symbol">:/usr/sbin</span><span class="symbol">:/bin</span><span class="symbol">:/sbin</span><span class="symbol">:/usr/X11R6/bin</span></span><br><span class="line">```  </span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line">命令执行后不要关闭终端或者cd /usr/bin 下执行vi命令否则会再次失效  </span><br><span class="line"><span class="comment">## 2.检查.bash_profile文件  </span></span><br><span class="line">很有可能是你的PATH 环境变量设置错误，比如 <span class="variable">$PATH</span> 漏了，我这里的错误是添加环境变量的时候没有使用<span class="string">""</span>双引号引起来，还有=等号后面有空格，不知道等号后面有空格会不会影响，加上双引号，去掉空格就可以了 PATH=<span class="variable">$PATH</span><span class="symbol">:</span><span class="variable">$PATH1</span> 可以写成这样的格式：export PATH=<span class="regexp">/usr/local</span><span class="regexp">/msyql/bin</span><span class="symbol">:</span><span class="variable">$PATH</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 3.保存.bash_profile文件</span></span><br></pre></td></tr></table></figure><p>source ~/.bash_profile</p><pre><code></code></pre>]]></content>
+        <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>今天使用composer安装laravel遇到报错zlib_decode(),在此记录一下解决办法</p></blockquote><p>以前从来没有遇到的问题,报错的安装命令为</p><figure class="highlight dsconfig"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">composer </span><span class="built_in">create-project</span>  <span class="string">laravel/</span><span class="string">laravel </span><span class="string">bjyblog </span><span class="built_in">--prefer-dist</span></span><br></pre></td></tr></table></figure><p>一直提示zlib_decode(),找了许多方法都没有效果。</p><a id="more"></a><p>然后我就机智的将<code>--prefer-dist</code>移了一下位置</p><figure class="highlight dsconfig"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">composer </span><span class="built_in">create-project</span> <span class="built_in">--prefer-dist</span> <span class="string">laravel/</span><span class="string">laravel </span><span class="string">bjyblog</span></span><br></pre></td></tr></table></figure><p>这样就好了,网上有很多教程将<code>--prefer-dist</code>放到最后,希望大家不要踩坑。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> composer </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> laravel </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>解决mac command not found</title>
+      <link href="//blog/%E8%A7%A3%E5%86%B3mac%20command%20not%20found.html"/>
+      <url>//blog/%E8%A7%A3%E5%86%B3mac%20command%20not%20found.html</url>
+      
+        <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>最近在配置mac的环境变量后,系统的所有命令都失效了,提示mac command not found,在此记录解决方法</p></blockquote><h2 id="1-先让命令暂时可用"><a href="#1-先让命令暂时可用" class="headerlink" title="1.先让命令暂时可用"></a>1.先让命令暂时可用</h2><p>命令如下</p><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=<span class="regexp">/usr/bin</span><span class="symbol">:/usr/sbin</span><span class="symbol">:/bin</span><span class="symbol">:/sbin</span><span class="symbol">:/usr/X11R6/bin</span></span><br></pre></td></tr></table></figure><a id="more"></a><p>命令执行后不要关闭终端或者cd /usr/bin 下执行vi命令否则会再次失效  </p><h2 id="2-检查bash-profile文件"><a href="#2-检查bash-profile文件" class="headerlink" title="2.检查bash_profile文件"></a>2.检查bash_profile文件</h2><p>很有可能是你的PATH 环境变量设置错误，比如 <code>$PATH</code>漏了，我这里的错误是添加环境变量的时候没有使用<code>&quot;&quot;</code>双引号引起来，还有<code>=</code>等号后面有空格，不知道等号后面有空格会不会影响，加上双引号，去掉空格就可以了<code>PATH=$PATH:$PATH1</code> 可以写成这样的格式：<code>export PATH=/usr/local/msyql/bin:$PATH</code></p><h2 id="3-保存bash-profile文件"><a href="#3-保存bash-profile文件" class="headerlink" title="3.保存bash_profile文件"></a>3.保存bash_profile文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.bash_profile</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -23,38 +48,6 @@
             <tag> mac </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>CSS实现抖音风格文字</title>
-      <link href="//blog/CSS%E5%AE%9E%E7%8E%B0%E6%8A%96%E9%9F%B3%E9%A3%8E%E6%A0%BC%E6%96%87%E5%AD%97.html"/>
-      <url>//blog/CSS%E5%AE%9E%E7%8E%B0%E6%8A%96%E9%9F%B3%E9%A3%8E%E6%A0%BC%E6%96%87%E5%AD%97.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="1级标题"><a href="#1级标题" class="headerlink" title="1级标题"></a>1级标题</h1><p>测试数据测试数据测试数据测试数据测试数据测试数据<br>测试数据测试数据测试数据测试数据测试数据测试数据测试数据</p><a id="more"></a><h2 id="2级标题"><a href="#2级标题" class="headerlink" title="2级标题"></a>2级标题</h2><p>测试数据测试数据测试数据测试数据测试数据测试数据测试数据<br>测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据<br>测试数据测试数据测试数据测试数据测试数据</p><h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>几点开始垃圾堆里卡睡觉了</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> CSS </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>我的第一篇博客</title>
-      <link href="//blog/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2.html"/>
-      <url>//blog/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2.html</url>
-      
-        <content type="html"><![CDATA[<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="meta">&lt;?php</span></span></span><br><span class="line"><span class="php"></span></span><br><span class="line"><span class="php"><span class="keyword">echo</span> <span class="string">"hello wordl!"</span></span></span><br></pre></td></tr></table></figure><p>测试成功</p>]]></content>
-      
-      
       
     </entry>
     
