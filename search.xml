@@ -4,23 +4,23 @@
   
     
     <entry>
-      <title>你好hexo</title>
+      <title>解决mac command not found</title>
       <link href="//blog/%E4%BD%A0%E5%A5%BDhexo.html"/>
       <url>//blog/%E4%BD%A0%E5%A5%BDhexo.html</url>
       
-        <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>HEXO安装</p></blockquote><h4 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h4><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git</span></span><br></pre></td></tr></table></figure><h4 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h4><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g <span class="meta">&amp;&amp; hexo s</span></span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>最近在配置mac的环境变量后,系统的所有命令都失效了提示mac command not found 在此记录解决方法</p></blockquote><h2 id="1-先让命令暂时可用"><a href="#1-先让命令暂时可用" class="headerlink" title="1.先让命令暂时可用"></a>1.先让命令暂时可用</h2><p>命令如下</p><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">export PATH=<span class="regexp">/usr/bin</span><span class="symbol">:/usr/sbin</span><span class="symbol">:/bin</span><span class="symbol">:/sbin</span><span class="symbol">:/usr/X11R6/bin</span></span><br><span class="line">```  </span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line">命令执行后不要关闭终端或者cd /usr/bin 下执行vi命令否则会再次失效  </span><br><span class="line"><span class="comment">## 2.检查.bash_profile文件  </span></span><br><span class="line">很有可能是你的PATH 环境变量设置错误，比如 <span class="variable">$PATH</span> 漏了，我这里的错误是添加环境变量的时候没有使用<span class="string">""</span>双引号引起来，还有=等号后面有空格，不知道等号后面有空格会不会影响，加上双引号，去掉空格就可以了 PATH=<span class="variable">$PATH</span><span class="symbol">:</span><span class="variable">$PATH1</span> 可以写成这样的格式：export PATH=<span class="regexp">/usr/local</span><span class="regexp">/msyql/bin</span><span class="symbol">:</span><span class="variable">$PATH</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 3.保存.bash_profile文件</span></span><br></pre></td></tr></table></figure><p>source ~/.bash_profile</p><pre><code></code></pre>]]></content>
       
       
       <categories>
           
-          <category> hexo </category>
+          <category> mac </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hexo </tag>
+            <tag> mac </tag>
             
         </tags>
       
