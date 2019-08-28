@@ -1,27 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[你好hexo]]></title>
-    <url>%2F%2Fblog%2F%E4%BD%A0%E5%A5%BDhexo.html</url>
-    <content type="text"><![CDATA[HEXO安装 git安装1git node.js安装1hexo g &amp;&amp; hexo s]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>你好hexo</title>
+      <link href="//blog/%E4%BD%A0%E5%A5%BDhexo.html"/>
+      <url>//blog/%E4%BD%A0%E5%A5%BDhexo.html</url>
+      
+        <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>HEXO安装</p></blockquote><h4 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h4><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git</span></span><br></pre></td></tr></table></figure><h4 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h4><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g <span class="meta">&amp;&amp; hexo s</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
       <categories>
-        <category>hexo</category>
+          
+          <category> hexo </category>
+          
       </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[CSS实现抖音风格文字]]></title>
-    <url>%2F%2Fblog%2FCSS%E5%AE%9E%E7%8E%B0%E6%8A%96%E9%9F%B3%E9%A3%8E%E6%A0%BC%E6%96%87%E5%AD%97.html</url>
-    <content type="text"><![CDATA[1级标题测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据 2级标题测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据 测试几点开始垃圾堆里卡睡觉了]]></content>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[我的第一篇博客]]></title>
-    <url>%2F%2Fblog%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2.html</url>
-    <content type="text"><![CDATA[123&lt;?phpecho "hello wordl!" 测试成功]]></content>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CSS实现抖音风格文字</title>
+      <link href="//blog/CSS%E5%AE%9E%E7%8E%B0%E6%8A%96%E9%9F%B3%E9%A3%8E%E6%A0%BC%E6%96%87%E5%AD%97.html"/>
+      <url>//blog/CSS%E5%AE%9E%E7%8E%B0%E6%8A%96%E9%9F%B3%E9%A3%8E%E6%A0%BC%E6%96%87%E5%AD%97.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="1级标题"><a href="#1级标题" class="headerlink" title="1级标题"></a>1级标题</h1><p>测试数据测试数据测试数据测试数据测试数据测试数据<br>测试数据测试数据测试数据测试数据测试数据测试数据测试数据</p><a id="more"></a><h2 id="2级标题"><a href="#2级标题" class="headerlink" title="2级标题"></a>2级标题</h2><p>测试数据测试数据测试数据测试数据测试数据测试数据测试数据<br>测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据<br>测试数据测试数据测试数据测试数据测试数据</p><h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>几点开始垃圾堆里卡睡觉了</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的第一篇博客</title>
+      <link href="//blog/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2.html"/>
+      <url>//blog/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2.html</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="meta">&lt;?php</span></span></span><br><span class="line"><span class="php"></span></span><br><span class="line"><span class="php"><span class="keyword">echo</span> <span class="string">"hello wordl!"</span></span></span><br></pre></td></tr></table></figure><p>测试成功</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
