@@ -29,31 +29,6 @@
     
     
     <entry>
-      <title>composer报错zlib_decode()</title>
-      <link href="//blog/composer%E6%8A%A5%E9%94%99zlib_decode().html"/>
-      <url>//blog/composer%E6%8A%A5%E9%94%99zlib_decode().html</url>
-      
-        <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>今天使用composer安装laravel遇到报错zlib_decode(),在此记录一下解决办法</p></blockquote><p>以前从来没有遇到的问题,报错的安装命令为</p><figure class="highlight dsconfig"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">composer </span><span class="built_in">create-project</span>  <span class="string">laravel/</span><span class="string">laravel </span><span class="string">bjyblog </span><span class="built_in">--prefer-dist</span></span><br></pre></td></tr></table></figure><p>一直提示zlib_decode(),找了许多方法都没有效果。</p><a id="more"></a><p>然后我就机智的将<code>--prefer-dist</code>移了一下位置</p><figure class="highlight dsconfig"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">composer </span><span class="built_in">create-project</span> <span class="built_in">--prefer-dist</span> <span class="string">laravel/</span><span class="string">laravel </span><span class="string">bjyblog</span></span><br></pre></td></tr></table></figure><p>这样就好了,网上有很多教程将<code>--prefer-dist</code>放到最后,希望大家不要踩坑。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> composer </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> laravel </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>解决mac command not found</title>
       <link href="//blog/%E8%A7%A3%E5%86%B3mac%20command%20not%20found.html"/>
       <url>//blog/%E8%A7%A3%E5%86%B3mac%20command%20not%20found.html</url>
