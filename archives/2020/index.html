@@ -54,19 +54,18 @@
   };
 </script>
 
-  <meta name="description" content="之前用easyWechat时获取的用户信息是protected的对象,使用了\0*\0来获取到受保护的对象中的数据,最近在学习php底层的知识,本文讲述了为什么\0*\0能获取到受保护的数据  对象的结构在php中,一个对象,还是以一个zval做为载体的 12345678910typedef union _zvalue_value &amp;#123;    long lval;    double dv">
-<meta name="keywords" content="源码">
-<meta property="og:type" content="article">
-<meta property="og:title" content="php原理之对象的属性">
-<meta property="og:url" content="http://www.liaojiaxing.com/blog/php原理之对象的属性.html">
+  <meta name="description" content="SmauelL">
+<meta name="keywords" content="SmauelL">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SmauelL的博客">
+<meta property="og:url" content="http://www.liaojiaxing.com/archives/2020/index.html">
 <meta property="og:site_name" content="SmauelL的博客">
-<meta property="og:description" content="之前用easyWechat时获取的用户信息是protected的对象,使用了\0*\0来获取到受保护的对象中的数据,最近在学习php底层的知识,本文讲述了为什么\0*\0能获取到受保护的数据  对象的结构在php中,一个对象,还是以一个zval做为载体的 12345678910typedef union _zvalue_value &amp;#123;    long lval;    double dv">
+<meta property="og:description" content="SmauelL">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-29T03:31:52.704Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="php原理之对象的属性">
-<meta name="twitter:description" content="之前用easyWechat时获取的用户信息是protected的对象,使用了\0*\0来获取到受保护的对象中的数据,最近在学习php底层的知识,本文讲述了为什么\0*\0能获取到受保护的数据  对象的结构在php中,一个对象,还是以一个zval做为载体的 12345678910typedef union _zvalue_value &amp;#123;    long lval;    double dv">
-  <link rel="canonical" href="http://www.liaojiaxing.com/blog/php原理之对象的属性">
+<meta name="twitter:title" content="SmauelL的博客">
+<meta name="twitter:description" content="SmauelL">
+  <link rel="canonical" href="http://www.liaojiaxing.com/archives/2020/">
 
 
 <script id="page-configurations">
@@ -74,13 +73,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
+    isPost: false,
     isPage: false,
-    isArchive: false
+    isArchive: true
   };
 </script>
 
-  <title>php原理之对象的属性 | SmauelL的博客</title>
+  <title>归档 | SmauelL的博客</title>
   <meta name="generator" content="Hexo 3.9.0">
   
 
@@ -252,197 +251,97 @@
         <div class="content-wrap">
             
 
-          <div id="content" class="content page-post-detail">
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
+          <div id="content" class="content page-archive">
             
 
-  <div id="posts" class="posts-expand">
+  
+  
+  
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
+      <span class="archive-page-counter">
+        
+        
+        
+          
+        
+        嗯..! 目前共计 3 篇日志。 继续努力。
+      </span>
+      
+
+      
+
+  
+  
+  
+
+  
     
+    <div class="collection-title">
+      <h1 class="archive-year" id="archive-year-2020">2020</h1>
+    </div>
+  
+  
 
   <article class="post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.liaojiaxing.com/blog/php原理之对象的属性.html">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SmauelL">
-      <meta itemprop="description" content="SmauelL">
-      <meta itemprop="image" content="/images/blog_avatar.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SmauelL的博客">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">php原理之对象的属性
-
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2019-08-28 17:38:58" itemprop="dateCreated datePublished" datetime="2019-08-28T17:38:58+08:00">2019-08-28</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-08-29 11:31:52" itemprop="dateModified" datetime="2019-08-29T11:31:52+08:00">2019-08-29</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/php/" itemprop="url" rel="index"><span itemprop="name">php</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            <span id="/blog/php原理之对象的属性.html" class="post-meta-item leancloud_visitors" data-flag-title="php原理之对象的属性" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
+      <h2 class="post-title">
         
-      
-      <span class="post-meta-item-text">评论数：</span>
-    
-    <a title="评论数" href="/blog/php原理之对象的属性.html#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/blog/php原理之对象的属性.html" itemprop="commentCount"></span></a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-        <blockquote class="blockquote-center"><p>之前用easyWechat时获取的用户信息是protected的对象,使用了<code>\0*\0</code>来获取到受保护的对象中的数据,最近在学习php底层的知识,本文讲述了为什么<code>\0*\0</code>能获取到受保护的数据</p>
-</blockquote>
-<h2 id="对象的结构"><a href="#对象的结构" class="headerlink" title="对象的结构"></a>对象的结构</h2><p>在php中,一个对象,还是以一个zval做为载体的</p>
-<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">typedef <span class="class"><span class="keyword">union</span> <span class="title">_zvalue_value</span> &#123;</span></span><br><span class="line">    long lval;</span><br><span class="line">    double dval;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line">        char *val;</span><br><span class="line">        int len;</span><br><span class="line">    &#125; str;</span><br><span class="line">    HashTable *ht;</span><br><span class="line">    zend_object_value obj;</span><br><span class="line">&#125; zvalue_value;</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-<p>如果,一个zval是对象,那么zvalue_value中的对象,就指向一个zend_object_value的实例。一个zend_object_value包含两个成员,一个是标识符(整形序号),表明了当前对象存储在全局对象列表的位置,另外还有一个zend_object_handlers指针,指向当前对象所属类的handlers(标准操作集合).<br>真正的对象实体,zend_object中,保存了如下的关键信息入口:</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span><span class="selector-class">.ce</span>,zend_class_entry 类入口</span><br><span class="line"><span class="number">2</span><span class="selector-class">.properties</span>,hashTable普通属性集</span><br></pre></td></tr></table></figure>
-
-<h2 id="对象的属性"><a href="#对象的属性" class="headerlink" title="对象的属性"></a>对象的属性</h2><p>如上所述,普通属性是一个hashTable,在PHP5以后,引入了访问权限控制,而访问权限属性,是通过属性名进行区分的(为此Zend引入了zend_mangle_property_name)</p>
-<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>public 属性名</span><br><span class="line"><span class="number">2.</span>private \<span class="number">0</span>类名\<span class="number">0</span>属性名</span><br><span class="line"><span class="number">3.</span>protected \<span class="number">0</span>*\<span class="number">0</span>属性名</span><br></pre></td></tr></table></figure>
-
-<p>PHP通过这种方式,实现了对属性访问权限的标识,所以我们如果想要访问对象的私有/保护属性可以:</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> $_name1 = <span class="string">"private"</span>;</span><br><span class="line">    <span class="keyword">protected</span> $_name2 = <span class="string">"protected"</span>;</span><br><span class="line">&#125;</span><br><span class="line">$test = <span class="keyword">new</span> Test();</span><br><span class="line">$arr = (<span class="keyword">array</span>)$test;</span><br><span class="line">var_dump($arr[<span class="string">"\0Test\0_name1"</span>]);</span><br><span class="line">var_dump($arr[<span class="string">"\0*\0_name2"</span>]);</span><br><span class="line"><span class="comment">//输出</span></span><br><span class="line">string(<span class="number">7</span>) <span class="string">"private"</span></span><br><span class="line">string(<span class="number">9</span>) <span class="string">"protected"</span></span><br></pre></td></tr></table></figure>
-
-<p><code>参考自鸟哥博客</code><a href="http://www.laruence.com" target="_blank" rel="noopener">http://www.laruence.com</a></p>
-
-    </div>
-
-    
-    
-    
+          <a class="post-title-link" href="/blog/如何用GVM管理Go项目.html" itemprop="url">
+            <span itemprop="name">如何用GVM管理Go项目</span>
+          </a>
         
-      
-        
+      </h2>
 
-<div>
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>本文作者： </strong>SmauelL</li>
-  <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="http://www.liaojiaxing.com/blog/php原理之对象的属性.html" title="php原理之对象的属性">http://www.liaojiaxing.com/blog/php原理之对象的属性.html</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
-</ul>
-</div>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2020-01-13T10:35:34+08:00"
+              content="2020-01-13">
+          01-13
+        </time>
+      </div>
 
-      
-
-      <footer class="post-footer">
-          
-            
-          
-          <div class="post-tags">
-            
-              <a href="/tags/源码/" rel="tag"><i class="fa fa-tag"></i> 源码</a>
-            
-          </div>
-        
-
-        
-
-          <div class="post-nav">
-            <div class="post-nav-next post-nav-item">
-              
-                <a href="/blog/解决mac command not found.html" rel="next" title="解决mac command not found">
-                  <i class="fa fa-chevron-left"></i> 解决mac command not found
-                </a>
-              
-            </div>
-
-            <span class="post-nav-divider"></span>
-
-            <div class="post-nav-prev post-nav-item">
-              
-                <a href="/blog/如何用GVM管理Go项目.html" rel="prev" title="如何用GVM管理Go项目">
-                  如何用GVM管理Go项目 <i class="fa fa-chevron-right"></i>
-                </a>
-              
-            </div>
-          </div>
-        
-      </footer>
-    
-  </div>
-  
-  
-  
+    </header>
   </article>
 
+
+
+
+    </div>
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
           
-    
-    <div class="comments" id="comments"></div>
-  
 
         </div>
           
@@ -457,11 +356,6 @@
 
   <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
-        
-        
-        
-        
-      
 
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc" data-target="post-toc-wrap">
@@ -474,10 +368,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc">
-            <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#对象的结构"><span class="nav-number">1.</span> <span class="nav-text">对象的结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象的属性"><span class="nav-number">2.</span> <span class="nav-text">对象的属性</span></a></li></ol></div>
-          </div>
-        
       </div>
       <!--/noindex-->
 
@@ -712,9 +602,6 @@
 
 
   
-  <script src="/js/post-details.js?v=7.3.0"></script>
-
-
 
 <script>
 NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js', () => {
