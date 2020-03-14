@@ -6,7 +6,7 @@
     "version": "3.9.0"
   },
   "dependencies": {
-    "acorn": "^7.0.0",
+    "acorn": "^7.1.1",
     "admin": "^1.4.1",
     "eslint": "^6.2.1",
     "gulp": "^3.9.1",
